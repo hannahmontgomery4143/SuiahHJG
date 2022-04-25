@@ -3,15 +3,13 @@
 # ===========================================================================
 #
 # SYNOPSIS
-#
-#   AX_BOOST_BASE([MINIMUM-VERSION], [ACTION-IF-FOUND], [ACTION-IF-NOT-FOUND])
+
 #
 # DESCRIPTION
 #
 #   Test for the Boost C++ libraries of a particular version (or newer)
 #
 #   If no path to the installed boost library is given the macro searchs
-#   under /usr, /usr/local, /opt and /opt/local and evaluates the
 #   $BOOST_ROOT environment variable. Further documentation is available at
 #   <http://randspringer.de/boost/index.html>.
 #
@@ -61,7 +59,7 @@ AC_ARG_WITH([boost],
 
 
 AC_ARG_WITH([boost-libdir],
-  [AS_HELP_STRING([--with-boost-libdir=LIB_DIR],
+  [AS_HELP_STRING([
     [Force given directory for boost libraries.
      Note that this will override library path detection,
      so use this parameter only if default library detection fails
